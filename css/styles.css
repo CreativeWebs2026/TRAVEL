@@ -89,6 +89,24 @@ img { display: block; max-width: 100%; }
 .brand { font-family: var(--font-display); font-weight: 800; font-size: 19px; }
 .brand-tag { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); border: 1px solid var(--border); padding: 5px 10px; border-radius: 100px; backdrop-filter: blur(6px); background: rgba(255,255,255,0.05); }
 
+.topbar-actions { display: flex; align-items: center; gap: 8px; }
+.profile-chip {
+  display: flex; align-items: center; gap: 7px; padding: 7px 13px 7px 9px; border-radius: 100px;
+  border: 1px solid rgba(255,255,255,0.18); background: rgba(20,25,34,0.6); backdrop-filter: blur(10px);
+  color: var(--text); font-size: 13px; font-weight: 700; max-width: 150px;
+}
+.profile-chip #profileName { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.profile-chip #profileAvatar { font-size: 15px; }
+.icon-btn-ghost {
+  width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.18); background: rgba(20,25,34,0.6); backdrop-filter: blur(10px);
+  color: var(--text); font-size: 15px; position: relative;
+}
+.icon-btn-ghost .trip-count-badge {
+  position: absolute; top: -4px; right: -4px; min-width: 16px; height: 16px; padding: 0 3px; border-radius: 100px;
+  background: var(--accent); color: var(--accent-ink); font-size: 9.5px; font-weight: 800; line-height: 16px; text-align: center;
+}
+
 .home-hero { position: relative; z-index: 2; padding: 130px 20px 8px; }
 .home-hero h1 { font-size: clamp(30px, 8vw, 38px); font-weight: 800; line-height: 1.12; text-shadow: 0 4px 24px rgba(0,0,0,0.4); }
 .home-sub { display: block; margin-top: 12px; color: rgba(246,244,239,0.85); font-size: 15px; max-width: 34ch; text-shadow: 0 2px 12px rgba(0,0,0,0.4); }
@@ -290,6 +308,53 @@ img { display: block; max-width: 100%; }
 .tips-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .tips-meta span { font-size: 12px; background: var(--surface); border: 1px solid var(--border); padding: 6px 11px; border-radius: 100px; color: var(--text-dim); }
 
+/* ===== Save-trip heart button ===== */
+#saveTripBtn.saved { background: rgba(255,107,157,0.16); border-color: rgba(255,107,157,0.5); }
+#saveTripBtn.pulse { animation: savePulse 420ms var(--ease); }
+@keyframes savePulse { 0% { transform: scale(1); } 40% { transform: scale(1.25); } 100% { transform: scale(1); } }
+
+/* ===== Profile sheet ===== */
+.profile-name-input {
+  width: 100%; padding: 13px 16px; border-radius: 100px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text); font-size: 14.5px; font-family: var(--font-body); margin-top: 6px;
+}
+.profile-name-input:focus { outline: none; border-color: var(--accent); }
+.avatar-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.avatar-option {
+  width: 46px; height: 46px; border-radius: 50%; font-size: 20px; border: 2px solid var(--border);
+  background: var(--surface); display: flex; align-items: center; justify-content: center;
+}
+.avatar-option.active { border-color: var(--accent); background: rgba(242,165,60,0.12); }
+
+/* ===== My Trips screen ===== */
+.mytrips-header { display: flex; align-items: center; gap: 12px; padding: 18px 16px 16px; }
+.mytrips-header .back-btn { position: static; flex-shrink: 0; background: var(--surface); }
+.mytrips-header h1 { flex: 1; font-size: 19px; font-weight: 800; }
+.mytrips-body { padding: 4px 16px 60px; }
+
+.trip-card {
+  display: flex; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 10px; margin-bottom: 12px; animation: cardIn 380ms var(--ease) backwards;
+}
+.trip-card-media { position: relative; width: 84px; height: 84px; border-radius: 14px; overflow: hidden; flex-shrink: 0; background: linear-gradient(135deg, #1c2230, #11151d); }
+.trip-card-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.trip-card-content { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.trip-card-name { font-size: 15.5px; font-weight: 800; }
+.trip-card-meta { font-size: 12px; color: var(--text-dim); margin-top: 3px; }
+.trip-card-date { font-size: 11px; color: var(--text-faint); margin-top: auto; padding-top: 6px; }
+.trip-card-actions { display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; justify-content: center; }
+.trip-card-actions button {
+  width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface-strong);
+  color: var(--text); font-size: 14px;
+}
+.trip-card-actions .trip-delete-btn:hover { background: rgba(255,107,107,0.18); border-color: rgba(255,107,107,0.4); }
+
+.mytrips-empty { text-align: center; padding: 60px 24px; color: var(--text-dim); }
+.mytrips-empty .mytrips-empty-icon { font-size: 40px; margin-bottom: 14px; }
+.mytrips-empty h3 { font-size: 16px; color: var(--text); margin-bottom: 6px; }
+.mytrips-empty p { font-size: 13.5px; line-height: 1.5; max-width: 32ch; margin: 0 auto; }
+.mytrips-empty .cta-btn { margin-top: 20px; display: inline-block; width: auto; padding: 13px 26px; }
+
 /* ================================================================
    DESKTOP LAYOUT (>= 900px)
    Same markup, reflowed: full-width shell, wider media grids,
@@ -331,6 +396,13 @@ img { display: block; max-width: 100%; }
   .day-section-title { grid-column: 1 / -1; margin-bottom: 2px; }
   .stop-card { margin-bottom: 0; }
   .budget-fab { max-width: 420px; }
+
+  /* ---- My Trips ---- */
+  .mytrips-header, .mytrips-body { max-width: 800px; margin-left: auto; margin-right: auto; }
+  .mytrips-header { padding-left: 48px; padding-right: 48px; }
+  .mytrips-body { padding: 4px 48px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; align-items: start; }
+  .trip-card { margin-bottom: 0; }
+  .mytrips-empty { grid-column: 1 / -1; }
 
   /* ---- Sheets become centered modals ---- */
   .sheet-backdrop { cursor: pointer; }

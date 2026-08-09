@@ -12,6 +12,7 @@ const state = {
   },
   itinerary: null,
   currentDay: 1,
+  activeTripId: null,
 };
 
 /* ---------------- Screen navigation ---------------- */
@@ -411,10 +412,12 @@ function renderItineraryScreen() {
   document.getElementById("itinMeta").textContent = `${state.settings.days} days · ${state.settings.group} traveler${state.settings.group > 1 ? "s" : ""} · ${INTENSITY[state.settings.intensity].label} pace`;
   state.itinerary = generateItinerary(d, state.settings);
   state.currentDay = 1;
+  state.activeTripId = null;
   renderWeatherBar();
   renderDayTabs();
   renderItinBody();
   renderBudget();
+  updateSaveButtonState();
 }
 
 /* ---------------- Budget ---------------- */

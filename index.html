@@ -26,7 +26,12 @@
 
     <header class="home-topbar">
       <span class="brand">🧭 TravelAI</span>
-      <span class="brand-tag">AI Trip Planner</span>
+      <div class="topbar-actions">
+        <button class="profile-chip" id="profileChip">
+          <span id="profileAvatar">🧭</span><span id="profileName">Traveler</span>
+        </button>
+        <button class="icon-btn-ghost" id="myTripsBtn" aria-label="My trips">🧳</button>
+      </div>
     </header>
 
     <div class="home-hero">
@@ -118,6 +123,7 @@
         <h1 id="itinDestName"></h1>
         <p id="itinMeta"></p>
       </div>
+      <button class="icon-btn" id="saveTripBtn" aria-label="Save trip">🤍</button>
       <button class="icon-btn" id="tipsBtn" aria-label="Safety & tips">🛡</button>
     </header>
 
@@ -135,6 +141,16 @@
       <span id="budgetFabValue">—</span>
       <span class="budget-fab-caret">▲</span>
     </button>
+  </section>
+
+  <!-- ============ MY TRIPS ============ -->
+  <section id="screen-mytrips" class="screen" data-screen="mytrips">
+    <header class="mytrips-header">
+      <button class="back-btn" data-back="home" aria-label="Back">←</button>
+      <h1>My Trips</h1>
+      <button class="icon-btn" id="editProfileBtn" aria-label="Edit profile">✏️</button>
+    </header>
+    <div class="mytrips-body" id="mytripsBody"></div>
   </section>
 
 </div>
@@ -157,8 +173,22 @@
   <button class="sheet-close" data-close="tips">Close</button>
 </div>
 
+<!-- Profile sheet -->
+<div class="sheet-backdrop" id="profileBackdrop" data-close="profile"></div>
+<div class="sheet" id="profileSheet">
+  <div class="sheet-handle"></div>
+  <h2>Your profile</h2>
+  <p class="hint" style="margin-bottom:14px;">Saved only on this device — no account, no server.</p>
+  <label class="hint" for="profileNameInput">Name</label>
+  <input type="text" id="profileNameInput" class="profile-name-input" maxlength="24" placeholder="Your name" autocomplete="off" />
+  <label class="hint" style="display:block;margin-top:16px;">Avatar</label>
+  <div class="avatar-grid" id="avatarGrid"></div>
+  <button class="cta-btn" id="saveProfileBtn" style="margin-top:20px;">Save profile</button>
+</div>
+
 <script src="js/data.js"></script>
 <script src="js/worldsearch.js"></script>
 <script src="js/app.js"></script>
+<script src="js/trips.js"></script>
 </body>
 </html>
