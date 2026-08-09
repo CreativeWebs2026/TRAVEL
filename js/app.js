@@ -75,35 +75,73 @@ function renderPopularGrid() {
   });
 }
 
+function curatedMatches(q) {
+  return DESTINATIONS.filter(
+    (d) => d.name.toLowerCase().includes(q) || d.country.toLowerCase().includes(q)
+  );
+}
+
+function renderSuggestionList(box, q, matches) {
+  const curatedHtml = matches
+    .map(
+      (d) => `
+    <div class="suggestion-item" data-dest="${d.id}">
+      <div class="suggestion-thumb" style="background-image:url('${d.heroImage}')"></div>
+      <div><strong>${d.name}</strong><div style="font-size:11.5px;color:var(--text-dim)">${d.country}</div></div>
+    </div>`
+    )
+    .join("");
+  const worldRowHtml = `
+    <div class="suggestion-item suggestion-world" data-world="${encodeURIComponent(q)}">
+      <div class="suggestion-thumb suggestion-thumb-icon">🌍</div>
+      <div><strong>Search "${q}" worldwide</strong><div style="font-size:11.5px;color:var(--text-dim)">Live lookup via Wikipedia — works for any real place</div></div>
+    </div>`;
+  box.innerHTML = curatedHtml + worldRowHtml;
+  box.querySelectorAll(".suggestion-item[data-dest]").forEach((el) => {
+    el.addEventListener("click", () => { selectDestination(el.dataset.dest); closeSuggestions(box); });
+  });
+  const worldEl = box.querySelector(".suggestion-world");
+  if (worldEl) worldEl.addEventListener("click", () => runGlobalSearch(decodeURIComponent(worldEl.dataset.world), box));
+}
+
+function closeSuggestions(box) {
+  box.classList.remove("show");
+}
+
+async function runGlobalSearch(query, box) {
+  if (!query) return;
+  box.innerHTML = `<div class="suggestion-empty suggestion-loading">🔎 Searching worldwide for "${query}"…</div>`;
+  box.classList.add("show");
+  try {
+    const dest = await fetchGlobalDestination(query);
+    state.destination = dest;
+    renderPlanScreen();
+    goTo("plan");
+    closeSuggestions(box);
+  } catch (e) {
+    box.innerHTML = `<div class="suggestion-empty suggestion-error">⚠️ ${e.message}</div>`;
+  }
+}
+
 function setupSearch() {
   const input = document.getElementById("destInput");
   const box = document.getElementById("searchSuggestions");
   input.addEventListener("input", () => {
-    const q = input.value.trim().toLowerCase();
-    if (!q) { box.classList.remove("show"); box.innerHTML = ""; return; }
-    const matches = DESTINATIONS.filter(
-      (d) => d.name.toLowerCase().includes(q) || d.country.toLowerCase().includes(q)
-    );
-    if (matches.length === 0) {
-      box.innerHTML = `<div class="suggestion-empty">No match in this prototype's 8 destinations yet — try Tokyo, Rome, Santorini, Norway, Bali, Banff, Paris or Maldives.</div>`;
-    } else {
-      box.innerHTML = matches
-        .map(
-          (d) => `
-        <div class="suggestion-item" data-dest="${d.id}">
-          <div class="suggestion-thumb" style="background-image:url('${d.heroImage}')"></div>
-          <div><strong>${d.name}</strong><div style="font-size:11.5px;color:var(--text-dim)">${d.country}</div></div>
-        </div>`
-        )
-        .join("");
-      box.querySelectorAll(".suggestion-item").forEach((el) => {
-        el.addEventListener("click", () => selectDestination(el.dataset.dest));
-      });
-    }
+    const q = input.value.trim();
+    if (!q) { closeSuggestions(box); box.innerHTML = ""; return; }
+    renderSuggestionList(box, q, curatedMatches(q.toLowerCase()));
     box.classList.add("show");
   });
+  input.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter") return;
+    const q = input.value.trim();
+    if (!q) return;
+    const matches = curatedMatches(q.toLowerCase());
+    if (matches.length > 0) { selectDestination(matches[0].id); closeSuggestions(box); }
+    else runGlobalSearch(q, box);
+  });
   document.addEventListener("click", (e) => {
-    if (!box.contains(e.target) && e.target !== input) box.classList.remove("show");
+    if (!box.contains(e.target) && e.target !== input) closeSuggestions(box);
   });
 }
 
@@ -118,9 +156,12 @@ function selectDestination(id) {
 /* ---------------- Plan screen ---------------- */
 function renderPlanScreen() {
   const d = state.destination;
-  document.getElementById("planHeroImg").src = d.heroImage;
-  document.getElementById("planHeroImg").alt = `${d.name}, ${d.country}`;
-  document.getElementById("planDestCountry").textContent = d.country;
+  const heroImg = document.getElementById("planHeroImg");
+  if (d.heroImage) { heroImg.style.display = ""; heroImg.src = d.heroImage; } else { heroImg.style.display = "none"; }
+  heroImg.alt = `${d.name}, ${d.country}`;
+  document.getElementById("planDestCountry").textContent = d.isCustom
+    ? (d.country ? `${d.country} · 🌍 Live Wikipedia lookup` : "🌍 Live Wikipedia lookup")
+    : d.country;
   document.getElementById("planDestName").textContent = d.name;
   document.getElementById("planDestTagline").textContent = d.tagline;
   document.getElementById("daysValue").textContent = state.settings.days;
@@ -189,15 +230,20 @@ function setupSteppers() {
 function buildPool(destination) {
   const attractions = destination.attractions.map((a) => ({ ...a, kind: "attraction" }));
   const experiences = (destination.experiences || []).map((a) => ({ ...a, kind: "experience" }));
-  return [...attractions, ...experiences];
+  // rank = curated/notability order (0 = most prominent). Attractions are listed
+  // most-iconic-first in the data, so array position is a meaningful priority signal —
+  // without it, the hidden-gem bonus alone would push minor spots ahead of headline ones
+  // whenever no interest tags are selected to differentiate them.
+  return [...attractions, ...experiences].map((item, rank) => ({ ...item, rank }));
 }
 
 function scoreItem(item, interests, weather) {
   let score = 55;
   const matched = item.tags.filter((t) => interests.includes(t));
   score += matched.length * 12;
+  score -= item.rank * 0.7;
   if (matched.length >= 3) score += 6;
-  if (item.hiddenGem) score += 5;
+  if (item.hiddenGem) score += 2;
   if (weather === "rainy" || weather === "snow") {
     score += item.indoor ? 12 : -14;
   } else if (weather === "sunny") {
