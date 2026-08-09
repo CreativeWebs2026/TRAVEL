@@ -1,3 +1,7 @@
 node_modules/
 shots/
 *.output
+serve.js
+verify*.js
+fetch-*.ps1
+wiki-*.json
