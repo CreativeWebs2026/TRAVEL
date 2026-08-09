@@ -298,8 +298,8 @@ img { display: block; max-width: 100%; }
    of bottom sheets.
    ================================================================ */
 @media (min-width: 900px) {
-  body { background: radial-gradient(circle at 50% 0%, #141a24, #05060a 60%); align-items: flex-start; }
-  .app-shell { max-width: 1180px; min-height: 100vh; border-radius: 0; box-shadow: none; }
+  body { background: var(--bg); }
+  .app-shell { max-width: none; width: 100%; min-height: 100vh; border-radius: 0; box-shadow: none; }
 
   /* ---- Home ---- */
   .bg-carousel { height: 100vh; min-height: 640px; }
