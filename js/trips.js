@@ -35,15 +35,20 @@ function saveTrips(trips) {
 
 function findTripBySignature(trips, destination, settings) {
   const sig = JSON.stringify(settings.interests.slice().sort());
-  return trips.find(
-    (t) =>
-      t.destination.id === destination.id &&
-      t.settings.days === settings.days &&
-      t.settings.group === settings.group &&
-      t.settings.intensity === settings.intensity &&
-      t.settings.budgetTier === settings.budgetTier &&
-      JSON.stringify(t.settings.interests.slice().sort()) === sig
-  );
+  return trips.find((t) => {
+    try {
+      return (
+        t.destination.id === destination.id &&
+        t.settings.days === settings.days &&
+        t.settings.group === settings.group &&
+        t.settings.intensity === settings.intensity &&
+        t.settings.budgetTier === settings.budgetTier &&
+        JSON.stringify(t.settings.interests.slice().sort()) === sig
+      );
+    } catch (e) {
+      return false; // malformed/older saved trip — never let it block matching against valid ones
+    }
+  });
 }
 
 /* ---------------- Profile chip + sheet ---------------- */
@@ -91,9 +96,40 @@ function formatSavedDate(ts) {
   return new Date(ts).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" });
 }
 
+function renderTripCard(t) {
+  const days = t.settings && t.settings.days;
+  const group = t.settings && t.settings.group;
+  const intensityMeta = t.settings && INTENSITY[t.settings.intensity];
+  const name = (t.destination && t.destination.name) || "Untitled trip";
+  const metaBits = [
+    days ? `${days} days` : null,
+    group ? `${group} traveler${group > 1 ? "s" : ""}` : null,
+    intensityMeta ? intensityMeta.label : null,
+  ].filter(Boolean);
+  const hero = t.destination && t.destination.heroImage;
+  return `
+    <div class="trip-card">
+      <div class="trip-card-media">${hero ? `<img loading="lazy" src="${hero}" alt="${name}" onerror="this.remove()" />` : ""}</div>
+      <div class="trip-card-content">
+        <div class="trip-card-name">${name}</div>
+        <div class="trip-card-meta">${metaBits.join(" · ") || "Details unavailable"}</div>
+        <div class="trip-card-date">Saved ${formatSavedDate(t.savedAt)}</div>
+      </div>
+      <div class="trip-card-actions">
+        <button type="button" class="trip-open-btn" data-open="${t.id}" aria-label="Open trip">→</button>
+        <button type="button" class="trip-delete-btn" data-delete="${t.id}" aria-label="Delete trip">🗑</button>
+      </div>
+    </div>`;
+}
+
 function renderMyTripsScreen() {
-  const trips = loadTrips().slice().sort((a, b) => b.savedAt - a.savedAt);
   const body = document.getElementById("mytripsBody");
+  let trips = [];
+  try {
+    trips = loadTrips().slice().sort((a, b) => b.savedAt - a.savedAt);
+  } catch (e) {
+    console.error("Failed to load saved trips:", e);
+  }
 
   if (trips.length === 0) {
     body.innerHTML = `
@@ -108,23 +144,15 @@ function renderMyTripsScreen() {
     return;
   }
 
-  body.innerHTML = trips
-    .map(
-      (t) => `
-    <div class="trip-card">
-      <div class="trip-card-media">${t.destination.heroImage ? `<img loading="lazy" src="${t.destination.heroImage}" alt="${t.destination.name}" onerror="this.remove()" />` : ""}</div>
-      <div class="trip-card-content">
-        <div class="trip-card-name">${t.destination.name}</div>
-        <div class="trip-card-meta">${t.settings.days} days · ${t.settings.group} traveler${t.settings.group > 1 ? "s" : ""} · ${INTENSITY[t.settings.intensity].label}</div>
-        <div class="trip-card-date">Saved ${formatSavedDate(t.savedAt)}</div>
-      </div>
-      <div class="trip-card-actions">
-        <button type="button" class="trip-open-btn" data-open="${t.id}" aria-label="Open trip">→</button>
-        <button type="button" class="trip-delete-btn" data-delete="${t.id}" aria-label="Delete trip">🗑</button>
-      </div>
-    </div>`
-    )
+  // A single malformed saved trip (e.g. saved by an older version of the app)
+  // must never take down the whole list — skip it instead of throwing.
+  const cardsHtml = trips
+    .map((t) => {
+      try { return renderTripCard(t); }
+      catch (e) { console.error("Skipping unrenderable trip:", t && t.id, e); return ""; }
+    })
     .join("");
+  body.innerHTML = cardsHtml || `<div class="mytrips-empty"><p>Your saved trips couldn't be displayed. Try clearing this device's saved trips and saving again.</p></div>`;
 
   body.querySelectorAll("[data-open]").forEach((btn) => btn.addEventListener("click", () => openSavedTrip(btn.dataset.open)));
   body.querySelectorAll("[data-delete]").forEach((btn) =>
@@ -135,21 +163,25 @@ function renderMyTripsScreen() {
 function openSavedTrip(tripId) {
   const trip = loadTrips().find((t) => t.id === tripId);
   if (!trip) return;
-  state.destination = trip.destination;
-  state.settings = JSON.parse(JSON.stringify(trip.settings));
-  state.itinerary = JSON.parse(JSON.stringify(trip.itinerary));
-  state.currentDay = 1;
-  state.activeTripId = trip.id;
+  try {
+    state.destination = trip.destination;
+    state.settings = JSON.parse(JSON.stringify(trip.settings));
+    state.itinerary = JSON.parse(JSON.stringify(trip.itinerary));
+    state.currentDay = 1;
+    state.activeTripId = trip.id;
 
-  document.getElementById("itinDestName").textContent = `${trip.destination.name} Trip`;
-  document.getElementById("itinMeta").textContent =
-    `${trip.settings.days} days · ${trip.settings.group} traveler${trip.settings.group > 1 ? "s" : ""} · ${INTENSITY[trip.settings.intensity].label} pace`;
-  renderWeatherBar();
-  renderDayTabs();
-  renderItinBody();
-  renderBudget();
-  updateSaveButtonState();
-  goTo("itinerary");
+    document.getElementById("itinDestName").textContent = `${trip.destination.name} Trip`;
+    document.getElementById("itinMeta").textContent =
+      `${trip.settings.days} days · ${trip.settings.group} traveler${trip.settings.group > 1 ? "s" : ""} · ${INTENSITY[trip.settings.intensity].label} pace`;
+    renderWeatherBar();
+    renderDayTabs();
+    renderItinBody();
+    renderBudget();
+    updateSaveButtonState();
+    goTo("itinerary");
+  } catch (e) {
+    console.error("Couldn't open saved trip — it may have been saved by an older version of the app:", tripId, e);
+  }
 }
 
 function deleteSavedTrip(tripId) {
@@ -164,10 +196,15 @@ function deleteSavedTrip(tripId) {
 function updateSaveButtonState() {
   const btn = document.getElementById("saveTripBtn");
   if (!btn || !state.destination) return;
-  const trips = loadTrips();
-  const existing = state.activeTripId
-    ? trips.find((t) => t.id === state.activeTripId)
-    : findTripBySignature(trips, state.destination, state.settings);
+  let existing = null;
+  try {
+    const trips = loadTrips();
+    existing = state.activeTripId
+      ? trips.find((t) => t.id === state.activeTripId)
+      : findTripBySignature(trips, state.destination, state.settings);
+  } catch (e) {
+    console.error("updateSaveButtonState failed:", e);
+  }
   if (existing) {
     state.activeTripId = existing.id;
     btn.textContent = "❤️";
@@ -209,7 +246,10 @@ function initTripsUI() {
   renderProfileChip();
   renderTripCountBadge();
 
-  document.getElementById("myTripsBtn").addEventListener("click", () => { renderMyTripsScreen(); goTo("mytrips"); });
+  document.getElementById("myTripsBtn").addEventListener("click", () => {
+    goTo("mytrips");
+    try { renderMyTripsScreen(); } catch (e) { console.error("renderMyTripsScreen failed:", e); }
+  });
   document.getElementById("profileChip").addEventListener("click", openProfileSheet);
   document.getElementById("editProfileBtn").addEventListener("click", openProfileSheet);
   document.getElementById("saveTripBtn").addEventListener("click", toggleSaveTrip);
