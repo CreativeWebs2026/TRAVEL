@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>TravelAI — Your personal AI travel companion</title>
+<meta name="description" content="Discover destinations and generate complete day-by-day trip itineraries with real places, real photos, and real travel logic." />
+<meta name="theme-color" content="#0b0f16" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+</head>
+<body>
+
+<div id="app" class="app-shell">
+
+  <!-- ============ HOME ============ -->
+  <section id="screen-home" class="screen active" data-screen="home">
+    <div class="bg-carousel" aria-hidden="true">
+      <div class="bg-layer active" id="bgLayerA"></div>
+      <div class="bg-layer" id="bgLayerB"></div>
+      <div class="bg-scrim"></div>
+    </div>
+
+    <header class="home-topbar">
+      <span class="brand">🧭 TravelAI</span>
+      <span class="brand-tag">AI Trip Planner</span>
+    </header>
+
+    <div class="home-hero">
+      <h1>Where do you want<br/>to go next?</h1>
+      <p class="home-sub">Real places, real photos, and a complete day‑by‑day plan — built in seconds.</p>
+
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input id="destInput" type="text" placeholder="Try “Tokyo”, “Bali”, “Rome”…" autocomplete="off" />
+        <div id="searchSuggestions" class="search-suggestions"></div>
+      </div>
+
+      <div class="home-chips" id="destChips"></div>
+    </div>
+
+    <div class="sheet-scroll-hint">
+      <div class="popular-section">
+        <h2>Popular destinations</h2>
+        <div class="popular-grid" id="popularGrid"></div>
+
+        <h2 class="section-gap">How TravelAI plans your trip</h2>
+        <div class="how-it-works">
+          <div class="how-step"><span class="how-num">1</span><div><strong>Pick a place</strong><p>Search or tap a destination card.</p></div></div>
+          <div class="how-step"><span class="how-num">2</span><div><strong>Tune your trip</strong><p>Days, budget, pace and interests.</p></div></div>
+          <div class="how-step"><span class="how-num">3</span><div><strong>Get your itinerary</strong><p>A full day‑by‑day plan with real spots, match scores and a live budget.</p></div></div>
+        </div>
+        <p class="prototype-note">This is a prototype: destinations, landmarks and photos are real (sourced from Wikimedia Commons), but it covers a curated set of 8 destinations rather than live global search.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLAN ============ -->
+  <section id="screen-plan" class="screen" data-screen="plan">
+    <div class="plan-hero" id="planHero">
+      <button class="back-btn" data-back="home" aria-label="Back">←</button>
+      <img id="planHeroImg" src="" alt="" onerror="this.style.display='none'" />
+      <div class="plan-hero-scrim"></div>
+      <div class="plan-hero-text">
+        <span class="plan-hero-country" id="planDestCountry"></span>
+        <h1 id="planDestName"></h1>
+        <p id="planDestTagline"></p>
+      </div>
+    </div>
+
+    <div class="plan-form">
+      <div class="form-row">
+        <label>📅 Days</label>
+        <div class="stepper" id="daysStepper">
+          <button type="button" data-step="-1" aria-label="Fewer days">−</button>
+          <span id="daysValue">4</span>
+          <button type="button" data-step="1" aria-label="More days">+</button>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>👥 Group size</label>
+        <div class="stepper" id="groupStepper">
+          <button type="button" data-step="-1" aria-label="Smaller group">−</button>
+          <span id="groupValue">2</span>
+          <button type="button" data-step="1" aria-label="Larger group">+</button>
+        </div>
+      </div>
+
+      <div class="form-row block">
+        <label>⚡ Trip intensity</label>
+        <div class="segmented" id="intensitySeg"></div>
+        <p class="hint" id="intensityHint"></p>
+      </div>
+
+      <div class="form-row block">
+        <label>💰 Budget</label>
+        <div class="segmented" id="budgetSeg"></div>
+      </div>
+
+      <div class="form-row block">
+        <label>🎯 Interests <span class="hint-inline">(pick a few — optional)</span></label>
+        <div class="chip-group" id="interestChips"></div>
+      </div>
+
+      <button class="cta-btn" id="generateBtn">Generate my trip ✨</button>
+    </div>
+  </section>
+
+  <!-- ============ ITINERARY ============ -->
+  <section id="screen-itinerary" class="screen" data-screen="itinerary">
+    <header class="itin-header">
+      <button class="back-btn" data-back="plan" aria-label="Back">←</button>
+      <div class="itin-header-text">
+        <h1 id="itinDestName"></h1>
+        <p id="itinMeta"></p>
+      </div>
+      <button class="icon-btn" id="tipsBtn" aria-label="Safety & tips">🛡</button>
+    </header>
+
+    <div class="weather-bar-wrap">
+      <span class="weather-label">Adapt to weather:</span>
+      <div class="weather-bar" id="weatherBar"></div>
+    </div>
+
+    <div class="day-tabs" id="dayTabs"></div>
+
+    <div class="itin-body" id="itinBody"></div>
+
+    <button class="budget-fab" id="budgetFab">
+      <span>💰</span>
+      <span id="budgetFabValue">—</span>
+      <span class="budget-fab-caret">▲</span>
+    </button>
+  </section>
+
+</div>
+
+<!-- Budget sheet -->
+<div class="sheet-backdrop" id="budgetBackdrop" data-close="budget"></div>
+<div class="sheet" id="budgetSheet">
+  <div class="sheet-handle"></div>
+  <h2>Estimated trip budget</h2>
+  <div id="budgetBody"></div>
+  <button class="sheet-close" data-close="budget">Close</button>
+</div>
+
+<!-- Safety sheet -->
+<div class="sheet-backdrop" id="tipsBackdrop" data-close="tips"></div>
+<div class="sheet" id="tipsSheet">
+  <div class="sheet-handle"></div>
+  <h2 id="tipsTitle">Safety & local tips</h2>
+  <div id="tipsBody"></div>
+  <button class="sheet-close" data-close="tips">Close</button>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
