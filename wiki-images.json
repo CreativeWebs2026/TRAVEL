@@ -1,0 +1,416 @@
+﻿{
+    "Banff National Park":  {
+                                "title":  "Banff National Park",
+                                "description":  "National park in Alberta, Canada",
+                                "extract":  "Banff National Park is Canada\u0027s first national park, established in 1885 as Rocky Mountains Park. Located in Alberta\u0027s Rocky Mountains, 110–180 kilometres (68–112 mi) west of Calgary, Banff encompasses 6,641 square kilometres (2,564 sq mi) of mountainous terrain, with many glaciers and ice fields, dense coniferous forest, and alpine landscapes. Provincial forests and Yoho National Park are neighbours to the west, while Kootenay National Park is located to the south and Kananaskis Country to the southeast. The main commercial centre of the park is the town of Banff, in the Bow River valley.",
+                                "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/330px-Moraine_Lake_17092005.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                                "original":  "https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                                "lat":  51.5,
+                                "lon":  -116
+                            },
+    "Trevi Fountain":  {
+                           "title":  "Trevi Fountain",
+                           "description":  "Fountain in Rome, Italy",
+                           "extract":  "The Trevi Fountain is an 18th-century fountain in the Trevi district in Rome, Italy, designed by Italian architect Nicola Salvi and completed by Giuseppe Pannini in 1762. Standing 26.3 metres (86 ft) high and 49.15 metres (161.3 ft) wide, it is the largest Baroque fountain in the world and one of the most famous fountains in the world.",
+                           "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/330px-Trevi_Fountain_-_Roma.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                           "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/3840px-Trevi_Fountain_-_Roma.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                           "lat":  41.90083333,
+                           "lon":  12.48305556
+                       },
+    "Meiji Shrine":  {
+                         "title":  "Meiji Shrine",
+                         "description":  "Shinto shrine in Tokyo, Japan",
+                         "extract":  "Meiji Shrine  is a Shinto shrine in Shibuya, Tokyo, that is dedicated to the deified spirits of Emperor Meiji and his wife, Empress Shōken. The shrine does not contain the emperor\u0027s grave, which is located at Fushimi-momoyama, south of Kyoto.",
+                         "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Meiji_Jingu_2023-3.jpg/330px-Meiji_Jingu_2023-3.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                         "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Meiji_Jingu_2023-3.jpg/3840px-Meiji_Jingu_2023-3.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                         "lat":  35.67611111,
+                         "lon":  139.69916667
+                     },
+    "Preikestolen":  {
+                         "title":  "Preikestolen",
+                         "description":  "Cliff and tourist attraction in Norway",
+                         "extract":  "Preikestolen or Prekestolen is a tourist attraction in Strand Municipality in Rogaland county, Norway. Preikestolen is a steep cliff which rises 604 metres (1,982 ft) above Lysefjorden. Atop the cliff, there is an almost flat top of approximately 25 by 25 metres. Preikestolen is located near the western part of the fjord, and on its north side.",
+                         "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Lyse_Fjord_et_Preikestolen.jpg/330px-Lyse_Fjord_et_Preikestolen.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                         "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Lyse_Fjord_et_Preikestolen.jpg/3840px-Lyse_Fjord_et_Preikestolen.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                         "lat":  58.98666,
+                         "lon":  6.18748
+                     },
+    "Santorini":  {
+                      "title":  "Santorini",
+                      "description":  "Greek island in the Aegean Sea",
+                      "extract":  "Santorini, officially Thira or Thera, is a Greek island in the southern Aegean Sea, about 200 km (120 mi) southeast from the mainland. It is the largest island of a small, circular archipelago formed by the Santorini caldera. It is the southernmost member of the Cyclades group of islands, with an area of approximately 73 km2 (28 mi2) and a 2021 census population of 15,480. The municipality of Santorini includes the inhabited islands of Santorini and Therasia, and the uninhabited islands of Nea Kameni, Palaia Kameni, Aspronisi, Anydros, and Christiana. The total land area is 90 km2 (35 mi2). Santorini is part of the Thira regional unit.",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/2011_Dimos_Thiras.png/330px-2011_Dimos_Thiras.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                      "original":  "https://upload.wikimedia.org/wikipedia/commons/b/bf/2011_Dimos_Thiras.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                      "lat":  36.415,
+                      "lon":  25.4325
+                  },
+    "Notre-Dame de Paris":  {
+                                "title":  "Notre-Dame de Paris",
+                                "description":  "Cathedral in Paris, France, built 1163–1345",
+                                "extract":  "Notre-Dame de Paris, often referred to simply as Notre-Dame, is a medieval Catholic cathedral on the Île de la Cité, in the 4th arrondissement of Paris, France. It is the cathedral church of the Roman Catholic Archdiocese of Paris.",
+                                "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/330px-Notre-Dame_de_Paris%2C_4_October_2017.jpg",
+                                "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/3840px-Notre-Dame_de_Paris%2C_4_October_2017.jpg",
+                                "lat":  48.85305556,
+                                "lon":  2.35
+                            },
+    "Trolltunga":  {
+                       "title":  "Trolltunga",
+                       "description":  "Rock formation in Norway",
+                       "extract":  "Trolltunga is a rock formation situated at an elevaton of 1,126 metres (3,694 ft) above sea level in Ullensvang Municipality in Vestland county, Norway. The cliff juts horizontally out from the mountain, about 700 metres (2,300 ft) above the north side of the lake Ringedalsvatnet.",
+                       "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Trolltunga_2017.jpg/330px-Trolltunga_2017.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                       "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Trolltunga_2017.jpg/3840px-Trolltunga_2017.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                       "lat":  60.13318,
+                       "lon":  6.75472
+                   },
+    "Louvre":  {
+                   "title":  "Louvre",
+                   "description":  "Art museum in Paris, France",
+                   "extract":  "The Louvre is a national art museum in Paris, France. It is located on the Right Bank of the Seine in the city\u0027s 1st arrondissement (district) and home to some of the most canonical works of Western art, including the Mona Lisa, Venus de Milo, and Winged Victory. The museum is housed in the Louvre Palace, originally built in the late 12th to 13th century under Philip II. Remnants of the Medieval Louvre fortress are visible in the basement of the museum. Due to urban expansion, the fortress eventually lost its defensive function, and in 1546 Francis I converted it into the primary residence of the French kings.",
+                   "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/330px-Louvre_Museum_Wikimedia_Commons.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                   "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/3840px-Louvre_Museum_Wikimedia_Commons.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                   "lat":  48.8611,
+                   "lon":  2.3358
+               },
+    "Paris":  {
+                  "title":  "Paris",
+                  "description":  "Capital of France",
+                  "extract":  "Paris is the capital and largest city of France, with an estimated city population of 2.04 million in an area of 105.4 km2 (40.7 sq mi), and a metropolitan population of 13.2 million as of January 2026. Located on the river Seine in the centre of the Île-de-France region, it is the largest metropolitan area and fourth-most populous city in the European Union (EU). Nicknamed the \"City of Light\", partly because of its role in the Age of Enlightenment, Paris has been one of the world\u0027s major centres of finance, diplomacy, commerce, culture, fashion, and gastronomy since the 17th century.",
+                  "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/330px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                  "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                  "lat":  48.8567,
+                  "lon":  2.3522
+              },
+    "Colosseum":  {
+                      "title":  "Colosseum",
+                      "description":  "Ancient Roman amphitheater in Rome",
+                      "extract":  "The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is the largest standing amphitheatre in the world. Construction began under the Emperor Vespasian in 72 and was completed in AD 80 under his successor and heir, Titus. Further modifications were made during the reign of Domitian. The three emperors who were patrons of the work are known as the Flavian dynasty, and the amphitheatre was named the Flavian Amphitheatre by later classicists and archaeologists for its association with their family name (Flavius).",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/330px-Colosseo_2020.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                      "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/3840px-Colosseo_2020.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                      "lat":  41.8903,
+                      "lon":  12.4922
+                  },
+    "Shinjuku Gyoen National Garden":  {
+                                           "title":  "Shinjuku Gyo-en",
+                                           "description":  "National garden in Tokyo, Japan",
+                                           "extract":  "Shinjuku Gyo-en  or Shinjuku Gyoen National Garden is a large public garden in Shinjuku and Shibuya, Tokyo, Japan. Originally a residence of the Naitō family in the Edo period, it later became a garden under the management of Japan Imperial Household Agency and is now a national garden under the jurisdiction of the Ministry of the Environment.",
+                                           "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Shinjuku_Gyoen_National_Garden_-_sakura_3.JPG/330px-Shinjuku_Gyoen_National_Garden_-_sakura_3.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                                           "original":  "https://upload.wikimedia.org/wikipedia/commons/9/9d/Shinjuku_Gyoen_National_Garden_-_sakura_3.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                                           "lat":  35.685,
+                                           "lon":  139.71
+                                       },
+    "Pantheon, Rome":  {
+                           "title":  "Pantheon, Rome",
+                           "description":  "Roman temple, later church, in Rome",
+                           "extract":  "The Pantheon is an ancient temple in Rome, Italy, originally built under emperor Augustus and reconstructed under Hadrian (117–138); since AD 609, it is a Catholic church called the Basilica of St. Mary and the Martyrs. It is perhaps the most famous, and architecturally most influential, rotunda.",
+                           "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/330px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                           "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/3840px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                           "lat":  41.8986,
+                           "lon":  12.4768
+                       },
+    "Fira":  {
+                 "title":  "Fira",
+                 "description":  "Capital and largest town on Santorini Island",
+                 "extract":  "Firá is the modern capital of the Greek Aegean island of Santorini (Thera). A traditional settlement, \"Firá\" derives its name from an alternative pronunciation of \"Thíra\", the ancient name of the island itself.",
+                 "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Santorini_Fira3_tango7174.jpg/330px-Santorini_Fira3_tango7174.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                 "original":  "https://upload.wikimedia.org/wikipedia/commons/e/e9/Santorini_Fira3_tango7174.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                 "lat":  36.42,
+                 "lon":  25.43166667
+             },
+    "Oia, Greece":  {
+                        "title":  "Oia, Greece",
+                        "description":  "Village in Greece",
+                        "extract":  "Oia or Ia is a small village and former community in the South Aegean on the islands of Thira (Santorini) and Therasia, in the Cyclades, Greece. Since the 2011 local government reform, it has been part of the municipality of Santorini, of which it is a municipal unit. It covers the whole island of Therasia and the northwesternmost part of Santorini, which it shares with the municipal unit of Santorini. The main street is named Nikolaou Nomikou. The population was 1,087 inhabitants at the 2021 census, and the land area is 19.449 km2.",
+                        "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Oia_sunset_-_panoramio_%282%29.jpg/330px-Oia_sunset_-_panoramio_%282%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                        "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Oia_sunset_-_panoramio_%282%29.jpg/3840px-Oia_sunset_-_panoramio_%282%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                        "lat":  36.46666667,
+                        "lon":  25.36666667
+                    },
+    "Bora Bora":  {
+                      "title":  "Bora Bora",
+                      "description":  "Island in French Polynesia",
+                      "extract":  "Bora Bora is a French island group in the Leeward Islands, comprising the western part of the Society Islands of French Polynesia, an overseas collectivity of the French Republic in the South Pacific. Bora Bora has a total land area of 30.55 km2 (12 sq mi). The main island, located about 230 kilometres northwest of Papeete, is surrounded by a lagoon and a barrier reef. In the center of the island are the remnants of an extinct volcano, rising to two peaks, Mount Pahia and Mount Otemanu; the highest point is at 727 m (2,385 ft).",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Bora_Bora_ISS006.jpg/330px-Bora_Bora_ISS006.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                      "original":  "https://upload.wikimedia.org/wikipedia/commons/2/2a/Bora_Bora_ISS006.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                      "lat":  -16.501,
+                      "lon":  -151.74
+                  },
+    "Male":  {
+                 "title":  "Male",
+                 "description":  "Sex of an organism which produces sperm",
+                 "extract":  "Male is the sex of an organism that produces, or is organized to produce, the gamete known as sperm, which fuses with the larger female gamete, or ovum, in the process of fertilisation. A male organism cannot reproduce sexually without access to at least one ovum from a female, but some organisms can reproduce both sexually and asexually. Most male mammals, including male humans, have a Y chromosome, which codes for the production of larger amounts of testosterone to develop male reproductive organs.",
+                 "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mars_symbol.svg/330px-Mars_symbol.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                 "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mars_symbol.svg/20px-Mars_symbol.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                 "lat":  null,
+                 "lon":  null
+             },
+    "Johnston Canyon":  {
+                            "title":  "Johnston Creek (Alberta)",
+                            "description":  "Creek in Alberta, Canada",
+                            "extract":  "Johnston Creek is a tributary of the Bow River in Canada\u0027s Rocky Mountains. The creek is located in Banff National Park.",
+                            "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/JohnstonCanyonUpperFalls.jpg/330px-JohnstonCanyonUpperFalls.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                            "original":  "https://upload.wikimedia.org/wikipedia/commons/3/3c/JohnstonCanyonUpperFalls.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                            "lat":  51.2417,
+                            "lon":  -115.8544
+                        },
+    "Bali":  {
+                 "title":  "Bali",
+                 "description":  "Province in Lesser Sunda Islands, Indonesia",
+                 "extract":  "Bali is an Indonesian island and province and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller offshore islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan to the southeast. The provincial capital, Denpasar, is the most populous city in the Lesser Sunda Islands and the second-largest, after Makassar, in Eastern Indonesia. The Denpasar metropolitan area is the extended metropolitan area around Denpasar. The upland town of Ubud in Greater Denpasar is considered as Bali\u0027s cultural centre. The province is Indonesia\u0027s main tourist destination, with a significant rise in tourism since the 1980s, and has become the country\u0027s area of overtourism. Tourism-related business makes up 80% of the Bali economy.",
+                 "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Bali_in_Indonesia_%28special_marker%29.svg/330px-Bali_in_Indonesia_%28special_marker%29.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                 "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Bali_in_Indonesia_%28special_marker%29.svg/1280px-Bali_in_Indonesia_%28special_marker%29.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                 "lat":  -8.335,
+                 "lon":  115.08805556
+             },
+    "Roman Forum":  {
+                        "title":  "Roman Forum",
+                        "description":  "Ancient Roman centre of Rome, Italy",
+                        "extract":  "The Roman Forum, also known by its Latin name Forum Romanum, is a rectangular forum (plaza) surrounded by the ruins of several important ancient government buildings at the centre of the city of Rome. Citizens of the ancient city referred to this space, originally a marketplace, as the Forum Magnum, or simply the Forum.",
+                        "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Foro_Romano_Musei_Capitolini_Roma.jpg/330px-Foro_Romano_Musei_Capitolini_Roma.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                        "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Foro_Romano_Musei_Capitolini_Roma.jpg/3840px-Foro_Romano_Musei_Capitolini_Roma.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                        "lat":  41.8922,
+                        "lon":  12.4852
+                    },
+    "Arc de Triomphe":  {
+                            "title":  "Arc de Triomphe",
+                            "description":  "Triumphal arch in Paris, France",
+                            "extract":  "The Arc de Triomphe de l\u0027Étoile, often simply called the Arc de Triomphe, is one of the most famous monuments in Paris, France. It is located at the western end of the Champs-Élysées, at the centre of the Place Charles de Gaulle—formerly known as the Place de l\u0027Étoile—named for the star-shaped configuration formed by the convergence of twelve radiating avenues. The monument is situated at the intersection of three arrondissements: the 16th, the 17th, and the 8th. Commissioned to honor those who fought and died for France during the French Revolutionary and Napoleonic Wars, the Arc bears the names of French victories and generals engraved on its inner and outer surfaces. Beneath its vault lies the Tomb of the Unknown Soldier from World War I, marked by an eternal flame commemorating unidentified fallen soldiers.",
+                            "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Arc_de_Triomphe%2C_Paris_21_October_2010.jpg/330px-Arc_de_Triomphe%2C_Paris_21_October_2010.jpg",
+                            "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Arc_de_Triomphe%2C_Paris_21_October_2010.jpg/3840px-Arc_de_Triomphe%2C_Paris_21_October_2010.jpg",
+                            "lat":  48.87377778,
+                            "lon":  2.29502778
+                        },
+    "Eiffel Tower":  {
+                         "title":  "Eiffel Tower",
+                         "description":  "Tower in Paris, France",
+                         "extract":  "The Eiffel Tower is a lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.",
+                         "thumb":  "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Eiffel_Tower_logo.svg/330px-Eiffel_Tower_logo.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                         "original":  "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Eiffel_Tower_logo.svg/330px-Eiffel_Tower_logo.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                         "lat":  48.85822222,
+                         "lon":  2.2945
+                     },
+    "Tokyo":  {
+                  "title":  "Tokyo",
+                  "description":  "Capital and most populous city in Japan",
+                  "extract":  "Tokyo, officially the Tokyo Metropolis, is the capital and most populous city of Japan. The population of the city proper was over 14 million as of 2023. The Greater Tokyo Area, which includes Tokyo and parts of six neighboring prefectures, is the third-most populous metropolitan area in the world, with 33 million residents as of 2025.",
+                  "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/330px-Skyscrapers_of_Shinjuku_2009_January.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                  "original":  "https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                  "lat":  35.68972222,
+                  "lon":  139.69222222
+              },
+    "Uluru":  {
+                  "title":  "Uluru",
+                  "description":  "Sandstone monolith in the Northern Territory, Australia",
+                  "extract":  "Uluru, also known as Ayers Rock and officially gazetted as Uluru / Ayers Rock, is a large sandstone monolith. It crops out near the centre of Australia in the southern part of the Northern Territory, 335 km (208 mi) south-west of Alice Springs.",
+                  "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ULURU.jpg/330px-ULURU.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                  "original":  "https://upload.wikimedia.org/wikipedia/commons/a/a8/ULURU.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                  "lat":  -25.345,
+                  "lon":  131.03611111
+              },
+    "Rome":  {
+                 "title":  "Rome",
+                 "description":  "Capital and largest city of Italy",
+                 "extract":  "Rome is the capital city and most populated comune (municipality) of Italy. It is also the administrative centre of the Lazio region and of the Metropolitan City of Rome. A special comune named Roma Capitale with a population of 2.7 million in an area of 1,287.36 km2 (497.1 mi2), Rome is the third most populous city in the European Union by population within city limits. The Metropolitan City of Rome Capital, with a population of 4.2 million, is the most populous metropolitan city in Italy. Its metropolitan area is the third-most populous within Italy. Rome is located in the central-western portion of the Italian Peninsula, within Lazio (Latium), along the shores of the Tiber Valley. Vatican City is an independent country inside the city boundaries of Rome, the only existing example of a country within a city. Rome is often referred to as the \"City of Seven Hills\" due to its geography, and also as the \"Eternal City\". Rome is generally considered to be one of the cradles of Western civilization and Western Christian culture, and the centre of the Catholic Church.",
+                 "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg/330px-Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                 "original":  "https://upload.wikimedia.org/wikipedia/commons/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                 "lat":  41.89333333,
+                 "lon":  12.48277778
+             },
+    "Tokyo Tower":  {
+                        "title":  "Tokyo Tower",
+                        "description":  "Communications and observation tower in Japan",
+                        "extract":  "Tokyo Tower , also known by its official name Japan Radio Tower is a communications and observation tower in the district of Shiba-koen in Minato, Tokyo, Japan, completed in 1958. At 332.9 meters, it was the tallest tower in Japan until the construction of Tokyo Skytree in 2012. It is a lattice tower inspired by the Eiffel Tower, and is painted white and international orange to comply with air safety regulations.",
+                        "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tokyo_Tower_2023.jpg/330px-Tokyo_Tower_2023.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                        "original":  "https://upload.wikimedia.org/wikipedia/commons/5/58/Tokyo_Tower_2023.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                        "lat":  35.65861111,
+                        "lon":  139.74555556
+                    },
+    "Bergen":  {
+                   "title":  "Bergen",
+                   "description":  "City and municipality in Vestland, Norway",
+                   "extract":  "Bergen is a city and municipality in the Vestland county on the west coast of Norway. Bergen is the second-largest city in Norway after the capital, Oslo.",
+                   "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bergen_panorama_at_night_-_panoramio_%281%29.jpg/330px-Bergen_panorama_at_night_-_panoramio_%281%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                   "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bergen_panorama_at_night_-_panoramio_%281%29.jpg/3840px-Bergen_panorama_at_night_-_panoramio_%281%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                   "lat":  60.38944444,
+                   "lon":  5.33
+               },
+    "Tegallalang":  {
+                        "title":  "Tegallalang",
+                        "description":  "District in Gianyar Regency, Bali Province, Indonesia",
+                        "extract":  "Tegallalang is a district in the Gianyar Regency, Bali, Indonesia. As of the 2010 census, the area was 61.80 km2 and the population was 50,625; the latest official estimate is 53,760.\nLocated around 10 km north of Ubud, its terraced rice fields are a tourist attraction in the area.",
+                        "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Indonesia_Gianyar_Tegallalang_district_location_map.svg/330px-Indonesia_Gianyar_Tegallalang_district_location_map.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                        "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Indonesia_Gianyar_Tegallalang_district_location_map.svg/1280px-Indonesia_Gianyar_Tegallalang_district_location_map.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                        "lat":  -8.43333333,
+                        "lon":  115.28333333
+                    },
+    "Ubud":  {
+                 "title":  "Ubud",
+                 "description":  "Town in Bali, Indonesia",
+                 "extract":  "Ubud is a town in the Gianyar Regency of Bali, Indonesia. Ubud has no status; that is part of the eponymous Ubud District of Gianyar. Promoted as an arts and culture centre, Ubud has developed a large tourism industry. It forms a northern part of the Greater Denpasar metropolitan area.",
+                 "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ubud_%2849818456887%29.jpg/330px-Ubud_%2849818456887%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                 "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ubud_%2849818456887%29.jpg/3840px-Ubud_%2849818456887%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                 "lat":  null,
+                 "lon":  null
+             },
+    "Geirangerfjord":  {
+                           "title":  "Geirangerfjord",
+                           "description":  "Fjord in Møre og Romsdal, Norway",
+                           "extract":  "Geirangerfjorden (Norwegian) or Geiranger Fjord (English) is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in Stranda Municipality. It is a 15-kilometre-long branch off the Sunnylvsfjorden, which itself is a branch off the Storfjorden. The small village of Geiranger is located at the end of the fjord where the Geirangelva river empties into it.",
+                           "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Geirangerfjord_.jpg/330px-Geirangerfjord_.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                           "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Geirangerfjord_.jpg/3840px-Geirangerfjord_.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                           "lat":  62.121,
+                           "lon":  7.129
+                       },
+    "Milky Way":  {
+                      "title":  "Milky Way",
+                      "description":  "Galaxy containing the Solar System",
+                      "extract":  "The Milky Way or Milky Way Galaxy, or simply the Galaxy, is the galaxy that includes the Solar System, with the name describing the galaxy\u0027s appearance from Earth: a hazy band of light seen in the night sky formed from stars in other arms of the galaxy, which are so far away that they cannot be individually distinguished by the naked eye.",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-VLT-Laser-phot-33a-07.jpg/330px-ESO-VLT-Laser-phot-33a-07.jpg",
+                      "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-VLT-Laser-phot-33a-07.jpg/3840px-ESO-VLT-Laser-phot-33a-07.jpg",
+                      "lat":  null,
+                      "lon":  null
+                  },
+    "Tanah Lot":  {
+                      "title":  "Tanah Lot",
+                      "description":  "Rock formation off the coast of Bali, Indonesia",
+                      "extract":  "Tanah Lot is a rock formation off the Indonesian island of Bali. It is home to the ancient Hindu pilgrimage temple Pura Tanah Lot, a popular tourist and cultural icon for photography.",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/TanahLot_2014.JPG/330px-TanahLot_2014.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                      "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/TanahLot_2014.JPG/3840px-TanahLot_2014.JPG?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                      "lat":  -8.62107,
+                      "lon":  115.08716
+                  },
+    "Montmartre":  {
+                       "title":  "Montmartre",
+                       "description":  "Large hill in Paris\u0027s northern 18th arrondissement",
+                       "extract":  "Montmartre is a large hill in Paris\u0027s northern 18th arrondissement. It is 130 m (430 ft) high and gives its name to the surrounding district, part of the Right Bank. Montmartre is primarily known for its artistic history, for the white-domed Basilica of the Sacré-Cœur on its summit, and as a nightclub district.",
+                       "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/View_from_Notre-Dame_de_Paris%2C_24_June_2014_004.jpg/330px-View_from_Notre-Dame_de_Paris%2C_24_June_2014_004.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                       "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/View_from_Notre-Dame_de_Paris%2C_24_June_2014_004.jpg/3840px-View_from_Notre-Dame_de_Paris%2C_24_June_2014_004.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                       "lat":  48.88694444,
+                       "lon":  2.34111111
+                   },
+    "Matterhorn":  {
+                       "title":  "Matterhorn",
+                       "description":  "Mountain in the Swiss and Italian Alps",
+                       "extract":  "The Matterhorn is a mountain of the Alps, straddling the main watershed and border between Switzerland and Italy. It is a large, near-symmetric pyramidal peak in the extended Monte Rosa area of the Pennine Alps, whose summit is 4,478 metres (14,692 ft) above sea level, making it one of the highest summits in the Alps and Europe. Sometimes referred to as the \"Mountain of Mountains\", the Matterhorn has become an indelible emblem of Switzerland and of the Alps as a whole. It has also been described as the most beautiful mountain in the world and has been claimed to be the most photographed mountain in the world.",
+                       "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg/330px-Matterhorn_from_Domh%C3%BCtte_-_2.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                       "original":  "https://upload.wikimedia.org/wikipedia/commons/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                       "lat":  45.97638889,
+                       "lon":  7.65861111
+                   },
+    "Peyto Lake":  {
+                       "title":  "Peyto Lake",
+                       "description":  "Lake in Alberta, Canada",
+                       "extract":  "Peyto Lake is a glacier-fed lake in Banff National Park in the Canadian Rockies. The lake is near the Icefields Parkway in Alberta, Canada. It was named for Bill Peyto, an early trail guide and trapper in the Banff area.",
+                       "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Panorama_of_Peyto_Lake%2C_Banff_National_Park%2C_Alberta%2C_Canada.jpg/330px-Panorama_of_Peyto_Lake%2C_Banff_National_Park%2C_Alberta%2C_Canada.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                       "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Panorama_of_Peyto_Lake%2C_Banff_National_Park%2C_Alberta%2C_Canada.jpg/3840px-Panorama_of_Peyto_Lake%2C_Banff_National_Park%2C_Alberta%2C_Canada.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                       "lat":  51.72694444,
+                       "lon":  -116.52194444
+                   },
+    "Campfire":  {
+                     "title":  "Campfire",
+                     "description":  "Fire lit at a campsite",
+                     "extract":  "A campfire is a fire at a campsite that provides light, warmth, and heat for cooking. It can also serve as a beacon and an insect and predator deterrent. Established campgrounds often provide a stone or steel fire ring for safety. Campfires are a popular feature of camping. At summer camps, the word campfire often refers to an event at which there is a fire. Some camps refer to the fire itself as a campfire.",
+                     "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Campfire_Pinecone.png/330px-Campfire_Pinecone.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                     "original":  "https://upload.wikimedia.org/wikipedia/commons/0/0f/Campfire_Pinecone.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                     "lat":  null,
+                     "lon":  null
+                 },
+    "Shibuya Crossing":  {
+                             "title":  "Shibuya Crossing",
+                             "description":  "Scramble crossing in Tokyo",
+                             "extract":  "Shibuya Scramble Crossing , commonly known as Shibuya Crossing, is a scramble crossing in Shibuya, Tokyo, Japan. It is located near Shibuya Station in Shibuya, a major commercial and entertainment district in Tokyo. It has been described as the world\u0027s busiest pedestrian crossing, with as many as 3,000 people crossing during a single green light cycle. Inaugurated in 1973, the intersection is a popular tourist destination and a widely recognized symbol of the city of Tokyo through its frequent appearances in television, film, and other media.",
+                             "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shibuya_Crossing%2C_Aerial.jpg/330px-Shibuya_Crossing%2C_Aerial.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                             "original":  "https://upload.wikimedia.org/wikipedia/commons/8/88/Shibuya_Crossing%2C_Aerial.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                             "lat":  35.6595,
+                             "lon":  139.70056
+                         },
+    "Akrotiri (prehistoric city)":  {
+                                        "title":  "Akrotiri (prehistoric city)",
+                                        "description":  "Bronze age archeological site on Santorini",
+                                        "extract":  "Akrotiri is a Cycladic Bronze Age settlement site on the volcanic Greek island of Santorini. The name comes from the nearby village of Akrotiri, the name of the site in antiquity is unknown.",
+                                        "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ancient_Akrotiri.jpeg/330px-Ancient_Akrotiri.jpeg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                                        "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ancient_Akrotiri.jpeg/3840px-Ancient_Akrotiri.jpeg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                                        "lat":  36.35138889,
+                                        "lon":  25.40361111
+                                    },
+    "Moraine Lake":  {
+                         "title":  "Moraine Lake",
+                         "description":  "Glacial lake in Alberta, Canada",
+                         "extract":  "Moraine Lake is a snow and glacially fed alpine lake in Banff National Park, 14 kilometres (8.7 mi) outside the village of Lake Louise, Alberta, Canada. It is situated in the Valley of the Ten Peaks, at an elevation of approximately 1,884 metres (6,181 ft). The lake has a surface area of 50 hectares.",
+                         "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/330px-Moraine_Lake_17092005.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                         "original":  "https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                         "lat":  51.3225,
+                         "lon":  -116.18555556
+                     },
+    "Lake Louise (Alberta)":  {
+                                  "title":  "Lake Louise (Alberta)",
+                                  "description":  "Glacial lake in Banff National Park, Alberta, Canada",
+                                  "extract":  "Lake Louise is a glacial lake within Banff National Park in Alberta, Canada. Situated 11 km (6.8 mi) east of the border with British Columbia, Lake Louise is located 5 km (3.1 mi) west of the community of Lake Louise and the Trans-Canada Highway.",
+                                  "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/1_lake_louise_pano_2019.jpg/330px-1_lake_louise_pano_2019.jpg",
+                                  "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/1_lake_louise_pano_2019.jpg/3840px-1_lake_louise_pano_2019.jpg",
+                                  "lat":  51.41166667,
+                                  "lon":  -116.22805556
+                              },
+    "Maldives":  {
+                     "title":  "Maldives",
+                     "description":  "Island country in South Asia",
+                     "extract":  "The Maldives, officially the Republic of Maldives, and historically known as the Maldive Islands, is an archipelagic country in South Asia, located in the Indian Ocean, near the southeastern boundary of the Arabian Sea. The Maldives is located southwest of India and Sri Lanka, about 750 kilometres from the Asian continent\u0027s mainland. The Maldives\u0027 chain of 26 atolls stretches across the equator from Ihavandhippolhu Atoll in the north to Addu Atoll in the south.",
+                     "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Maldives.svg/330px-Flag_of_Maldives.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                     "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Maldives.svg/960px-Flag_of_Maldives.svg.png?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                     "lat":  4.18,
+                     "lon":  73.51
+                 },
+    "Hoh Rainforest":  {
+                           "title":  "Hoh Rainforest",
+                           "description":  "Temperate Rainforest in the Olympic Peninsula",
+                           "extract":  "Hoh Rainforest is one of the largest temperate rainforests in the United States, located on the Olympic Peninsula in western Washington state. It encompasses 24 square miles (62 km2) of low elevation forest along the Hoh River, ranging from 394 to 2,493 feet. The rainforest receives an average of 140 inches (360 cm) of annual precipitation—among the rainiest places in the United States. The Hoh River valley was formed thousands of years ago by glaciers and is the ancestral home of the Hoh people.",
+                           "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/BIG_LEAF_MAPLES_HOH.jpg/330px-BIG_LEAF_MAPLES_HOH.jpg",
+                           "original":  "https://upload.wikimedia.org/wikipedia/commons/3/35/BIG_LEAF_MAPLES_HOH.jpg",
+                           "lat":  47.86144444,
+                           "lon":  -123.92466667
+                       },
+    "Uluwatu Temple":  {
+                           "title":  "Uluwatu Temple",
+                           "description":  "Balinese Hindu temple in Indonesia",
+                           "extract":  "Uluwatu Temple is a Balinese Hindu temple located on the south-western tip of the Bukit Peninsula in Uluwatu, Badung Regency, Bali, Indonesia. It is the only Balinese sea temple that is also one of the nine directional temples.",
+                           "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Pura_Luhur_Uluwatu_2017-08-17_%2834%29.jpg/330px-Pura_Luhur_Uluwatu_2017-08-17_%2834%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                           "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Pura_Luhur_Uluwatu_2017-08-17_%2834%29.jpg/3840px-Pura_Luhur_Uluwatu_2017-08-17_%2834%29.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                           "lat":  -8.82888889,
+                           "lon":  115.08527778
+                       },
+    "Piazza Navona":  {
+                          "title":  "Piazza Navona",
+                          "description":  "Public square in Rome, Italy",
+                          "extract":  "Piazza Navona is a public open space in Rome, Italy. It is built on the site of the 1st century AD Stadium of Domitian and follows the form of the open space of the stadium in an elongated oval. The ancient Romans went there to watch the agones (\"games\"), and hence it was known as \"Circus Agonalis\".",
+                          "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Piazza_Navona_%28Rome%29_at_night.jpg/330px-Piazza_Navona_%28Rome%29_at_night.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                          "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Piazza_Navona_%28Rome%29_at_night.jpg/3840px-Piazza_Navona_%28Rome%29_at_night.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                          "lat":  41.899,
+                          "lon":  12.4731
+                      },
+    "Skogafoss":  {
+                      "title":  "Skógafoss",
+                      "description":  "Waterfall in Iceland",
+                      "extract":  "Skógafoss is a waterfall on the Skógá River in the south of Iceland at the cliff marking the former coastline. After the coastline had receded, the former sea cliffs remained, parallel to the coast over hundreds of kilometres, creating together with some mountains a clear border between the coastal lowlands and the Highlands of Iceland.",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2008-05-24_35_Sk%C3%B3gafoss.jpg/330px-2008-05-24_35_Sk%C3%B3gafoss.jpg",
+                      "original":  "https://upload.wikimedia.org/wikipedia/commons/8/8c/2008-05-24_35_Sk%C3%B3gafoss.jpg",
+                      "lat":  63.53211111,
+                      "lon":  -19.51113889
+                  },
+    "Senso-ji":  {
+                     "title":  "Sensō-ji",
+                     "description":  "Buddhist temple in Tokyo, Japan",
+                     "extract":  "Sensō-ji , is an ancient Buddhist temple in Asakusa, Tokyo, Japan. It is Tokyo\u0027s oldest-established temple, and one of its most significant. It is dedicated to Kannon, the bodhisattva of compassion. Structures in the temple complex include the main hall, a five-story pagoda and large gates. It is the most widely visited religious site in the world with over 30 million visitors annually. The temple is the 13th stop on the Bandō Sanjūsankasho pilgrimage route.",
+                     "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/330px-Sensoji_2023.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                     "original":  "https://upload.wikimedia.org/wikipedia/commons/4/43/Sensoji_2023.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail_unscaled",
+                     "lat":  35.71472222,
+                     "lon":  139.79675
+                 },
+    "Flam Line":  {
+                      "title":  "Flåm Line",
+                      "description":  "Railway line in Aurland, Norway",
+                      "extract":  "The Flåm Line is a 20.2-kilometer (12.6 mi) long railway line between Myrdal and Flåm in Aurland Municipality, in Vestland county, Norway. A branch line of the Bergen Line, it runs through the valley of Flåmsdalen and connects the mainline with Sognefjord. The line\u0027s elevation difference is 866 meters (2,841 ft); it has ten stations, twenty tunnels and one bridge. The maximum gradient is 5.5 percent (1:18). Because of its steep gradient and picturesque nature, the Flåm Line is now almost exclusively a tourist service and has become the third-most visited tourist attraction in Norway.",
+                      "thumb":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Fl%C3%A5msbana.jpg/330px-Fl%C3%A5msbana.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                      "original":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Fl%C3%A5msbana.jpg/3840px-Fl%C3%A5msbana.jpg?utm_source=en.wikipedia.org\u0026utm_campaign=api\u0026utm_content=thumbnail",
+                      "lat":  60.77,
+                      "lon":  7.1
+                  }
+}
